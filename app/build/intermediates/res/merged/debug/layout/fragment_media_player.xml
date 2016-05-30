@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/soundcloud_logo"/>
+
+    <ImageView
+        android:id="@+id/artworkImageView"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/trackTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="Song Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/artistNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="Artist Name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/playerProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="invisible"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <SeekBar
+            android:id="@+id/playerSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/seekTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/playerSeekBar"
+            android:layout_alignParentLeft="true"
+            android:text="0:00"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/totalTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/playerSeekBar"
+            android:layout_alignParentRight="true"
+            android:text="0:00"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <ImageButton
+            android:id="@+id/rewindImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@null"
+            android:src="@drawable/ic_fast_rewind_black_48dp" />
+
+        <ImageButton
+            android:id="@+id/playPauseImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@null"
+            android:src="@drawable/ic_play_arrow_black_48dp" />
+
+        <ImageButton
+            android:id="@+id/stopImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@null"
+            android:src="@drawable/ic_stop_black_48dp" />
+
+        <ImageButton
+            android:id="@+id/fastForwardImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@null"
+            android:src="@drawable/ic_fast_forward_black_48dp"/>
+    </LinearLayout>
+
+</LinearLayout>

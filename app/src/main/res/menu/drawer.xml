@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navigation_item_apply_idea"
+            android:checked="true"
+            android:icon="@drawable/ic_cached_black_18dp"
+            android:title="Submit Your Idea!" />
+
+        <item
+            android:id="@+id/navigation_item_article"
+            android:icon="@drawable/ic_cached_black_18dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/navigation_item_gallery"
+            android:icon="@drawable/ic_cached_black_18dp"
+            android:title="Gallery" />
+
+        <item
+            android:id="@+id/navigation_item_polling"
+            android:icon="@drawable/ic_cached_black_18dp"
+            android:title="Polling" />
+
+        <item
+            android:id="@+id/navigation_item_telkomsel_feed"
+            android:icon="@drawable/ic_cached_black_18dp"
+            android:title="Telkomsel Promo" />
+
+        <item
+            android:id="@+id/navigation_item_booking"
+            android:icon="@drawable/ic_cached_black_18dp"
+            android:title="Join The Roadshow" />
+
+        <item
+            android:id="@+id/navigation_item_faq"
+            android:icon="@drawable/ic_cached_black_18dp"
+            android:title="FAQ" />
+
+    </group>
+
+</menu>
