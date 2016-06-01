@@ -60,7 +60,6 @@ public class SearchFragment extends Fragment {
         soundCloud = new SoundCloudApi(Config.CLIENT_ID).getService();
         trackAdapter = new TrackAdapter(getActivity());
 
-
     }
 
     @Override
@@ -101,6 +100,7 @@ public class SearchFragment extends Fragment {
         return view;
     }
 
+    //anjir gabut
     public void methodGabutErsa(){
         String query = "SRMbands";
 
@@ -153,4 +153,5 @@ public class SearchFragment extends Fragment {
         emptyView.setVisibility(View.INVISIBLE);
         progressBar.setVisibility(View.VISIBLE);
     }
+
 }

@@ -1,9 +1,12 @@
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$drawable$override.class
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$integer$override.class
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$styleable$override.class
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$string$override.class
+CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$drawable$override.class
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$mipmap$override.class
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$menu$override.class
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$id$override.class
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$style$override.class
 CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\github\cascal\reverb\R$layout$override.class
+CHANGED,C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\design\R$drawable$override.class

@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp" >
+    android:paddingBottom="16dp"
+    android:background="@color/primary">
 
     <ImageView
         android:id="@+id/avatarImageView"
@@ -37,6 +38,7 @@
                 android:ellipsize="end"
                 android:textSize="14sp"
                 android:textStyle="bold"
+                android:textColor="@color/textbluewhite"
                 android:text="\@username" />
 
             <TextView
@@ -46,7 +48,8 @@
                 android:maxLines="1"
                 android:ellipsize="end"
                 android:textSize="12sp"
-                android:text="3 days ago" />
+                android:text="3 days ago"
+                android:textColor="@color/textbluewhite"/>
 
         </LinearLayout>
 
@@ -59,6 +62,7 @@
             android:maxLines="5"
             android:ellipsize="end"
             android:textSize="14sp"
+            android:textColor="@color/textbluewhite"
             android:text="I really like this song! Keep up the great work!" />
 
     </LinearLayout>

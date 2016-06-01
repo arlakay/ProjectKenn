@@ -4,50 +4,29 @@
     api-level="22"
     density="xhdpi"
     format="7"
-    timestamp="17482365002628"
-    verifier="R_CLASS_CHANGE" >
+    timestamp="29864483517279" >
 
     <task
         name="javac"
-        duration="1126" />
+        duration="1497" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="249" />
+        duration="0" />
     <task
         name="verifier"
-        duration="48" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-        type="DEX" />
+        location="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="17382937280416" >
+    <build timestamp="29864483517279" >
         <artifact
             location="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="17482365002628"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="29118115304155"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\builds\debug\29118115304155\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

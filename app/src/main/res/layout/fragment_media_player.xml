@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/primary"
     android:gravity="center_horizontal">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/soundcloud_logo"/>
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/soundcloud_icon"/>
 
     <ImageView
         android:id="@+id/artworkImageView"
@@ -28,6 +28,7 @@
         android:gravity="center"
         android:textSize="16sp"
         android:text="Song Name"
+        android:textColor="@color/textbluewhite"
         android:textStyle="bold" />
 
     <TextView
@@ -37,6 +38,7 @@
         android:layout_marginBottom="6dp"
         android:gravity="center"
         android:textSize="16sp"
+        android:textColor="@color/textbluewhite"
         android:text="Artist Name" />
 
     <RelativeLayout
@@ -72,6 +74,7 @@
             android:layout_below="@id/playerSeekBar"
             android:layout_alignParentLeft="true"
             android:text="0:00"
+            android:textColor="@color/textbluewhite"
             android:textSize="14sp" />
 
         <TextView
@@ -83,6 +86,7 @@
             android:layout_below="@id/playerSeekBar"
             android:layout_alignParentRight="true"
             android:text="0:00"
+            android:textColor="@color/textbluewhite"
             android:textSize="14sp" />
 
     </RelativeLayout>
@@ -100,7 +104,7 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:background="@null"
-            android:src="@drawable/ic_fast_rewind_black_48dp" />
+            android:src="@drawable/ic_fast_rewind_white_24dp" />
 
         <ImageButton
             android:id="@+id/playPauseImageButton"
@@ -108,7 +112,7 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:background="@null"
-            android:src="@drawable/ic_play_arrow_black_48dp" />
+            android:src="@drawable/ic_play_arrow_white_24dp" />
 
         <ImageButton
             android:id="@+id/stopImageButton"
@@ -116,7 +120,7 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:background="@null"
-            android:src="@drawable/ic_stop_black_48dp" />
+            android:src="@drawable/ic_stop_white_24dp" />
 
         <ImageButton
             android:id="@+id/fastForwardImageButton"
@@ -124,7 +128,7 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:background="@null"
-            android:src="@drawable/ic_fast_forward_black_48dp"/>
+            android:src="@drawable/ic_fast_forward_white_24dp"/>
     </LinearLayout>
 
 </LinearLayout>

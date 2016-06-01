@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
 
     <ImageView
         android:id="@+id/artworkImageView"
@@ -19,6 +20,7 @@
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/textbluewhite"
         android:maxLines="1"
         android:ellipsize="end"
         android:paddingTop="6dp"
@@ -32,6 +34,7 @@
         android:text="Artist Name"
         android:layout_gravity="center_horizontal"
         android:textSize="14sp"
+        android:textColor="@color/textbluewhite"
         android:maxLines="1"
         android:ellipsize="end"
         android:paddingTop="6dp"
@@ -39,8 +42,8 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray" />
+        android:layout_height="0.6dp"
+        android:background="@color/accent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,11 +61,11 @@
             android:orientation="horizontal" >
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:paddingRight="6dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_play_arrow_black_18dp" />
+                android:src="@drawable/ic_play_arrow_white_48dp" />
 
             <TextView
                 android:id="@+id/playCountTextView"
@@ -70,7 +73,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="83,302"
-                android:textSize="10sp"/>
+                android:textSize="10sp"
+                android:textColor="@color/textbluewhite"/>
 
         </LinearLayout>
 
@@ -83,11 +87,11 @@
             android:orientation="horizontal" >
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:paddingRight="6dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_favorite_black_18dp" />
+                android:src="@drawable/ic_favorite_white_24dp" />
 
             <TextView
                 android:id="@+id/favoriteCountTextView"
@@ -95,7 +99,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="83,302"
-                android:textSize="10sp"/>
+                android:textSize="10sp"
+                android:textColor="@color/textbluewhite"/>
 
         </LinearLayout>
 
@@ -108,11 +113,11 @@
             android:orientation="horizontal" >
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:paddingRight="6dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_thumb_up_black_18dp" />
+                android:src="@drawable/ic_thumb_up_white_24dp" />
 
             <TextView
                 android:id="@+id/likeCountTextView"
@@ -120,7 +125,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="83,302"
-                android:textSize="10sp"/>
+                android:textSize="10sp"
+                android:textColor="@color/textbluewhite"/>
 
         </LinearLayout>
 
@@ -133,11 +139,11 @@
             android:orientation="horizontal" >
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:paddingRight="6dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_comment_black_18dp" />
+                android:src="@drawable/ic_comment_white_24dp" />
 
             <TextView
                 android:id="@+id/commentCountTextView"
@@ -145,15 +151,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="83,302"
-                android:textSize="10sp"/>
+                android:textSize="10sp"
+                android:textColor="@color/textbluewhite"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"/>
 
 </LinearLayout>

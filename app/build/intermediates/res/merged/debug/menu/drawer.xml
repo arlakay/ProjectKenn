@@ -9,37 +9,37 @@
             android:id="@+id/navigation_item_apply_idea"
             android:checked="true"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Submit Your Idea!" />
+            android:title="Gabut 1" />
 
         <item
             android:id="@+id/navigation_item_article"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Home" />
+            android:title="Gabut 2" />
 
         <item
             android:id="@+id/navigation_item_gallery"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Gallery" />
+            android:title="Gabut 3" />
 
         <item
             android:id="@+id/navigation_item_polling"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Polling" />
+            android:title="Gabut 4" />
 
         <item
             android:id="@+id/navigation_item_telkomsel_feed"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Telkomsel Promo" />
+            android:title="Gabut 5" />
 
         <item
             android:id="@+id/navigation_item_booking"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Join The Roadshow" />
+            android:title="Gabut 6" />
 
         <item
             android:id="@+id/navigation_item_faq"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="FAQ" />
+            android:title="Gabut 7" />
 
     </group>
 
