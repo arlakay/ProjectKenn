@@ -6,40 +6,46 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/navigation_item_apply_idea"
+            android:id="@+id/navigation_item_playlist"
             android:checked="true"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Gabut 1" />
+            android:title="Playlist" />
 
         <item
-            android:id="@+id/navigation_item_article"
+            android:id="@+id/navigation_item_home"
+            android:checked="true"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Gabut 2" />
+            android:title="Home" />
 
         <item
-            android:id="@+id/navigation_item_gallery"
+            android:id="@+id/navigation_item_our_artist"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Gabut 3" />
+            android:title="Our Artist" />
 
         <item
-            android:id="@+id/navigation_item_polling"
+            android:id="@+id/navigation_item_srm_news"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Gabut 4" />
+            android:title="SRM News" />
 
         <item
-            android:id="@+id/navigation_item_telkomsel_feed"
+            android:id="@+id/navigation_item_event_schedule"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Gabut 5" />
+            android:title="Event Schedule" />
 
         <item
-            android:id="@+id/navigation_item_booking"
+            android:id="@+id/navigation_item_bookings"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Gabut 6" />
+            android:title="Bookings" />
 
         <item
-            android:id="@+id/navigation_item_faq"
+            android:id="@+id/navigation_item_songs"
             android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Gabut 7" />
+            android:title="Songs" />
+
+        <item
+            android:id="@+id/navigation_item_merchandise"
+            android:icon="@drawable/ic_cached_black_18dp"
+            android:title="Merchandise" />
 
     </group>
 

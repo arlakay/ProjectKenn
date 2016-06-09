@@ -15,6 +15,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.github.cascal.reverb.view.SearchActivity"
@@ -32,14 +33,19 @@
             android:launchMode="singleTop" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".view.SearchActivity" />
+                android:value="com.github.cascal.reverb.view.SearchActivity" />
         </activity>
         <activity
             android:name="com.github.cascal.reverb.view.PlayerActivity"
             android:label="dsadsa" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".view.TrackDetailActivity" />
+                android:value="com.github.cascal.reverb.view.TrackDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.github.cascal.reverb.view.WebViewHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:launchMode="singleTask" >
         </activity>
 
         <service

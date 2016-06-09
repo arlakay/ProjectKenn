@@ -28,6 +28,10 @@
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_our_artist.xml",
+        "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\src\\main\\res\\layout\\fragment_our_artist.xml"
+    },
+    {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_layout_tab_icon.xml"
     },
@@ -40,12 +44,20 @@
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_snackbar.xml"
     },
     {
+        "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_merchandise.xml",
+        "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\src\\main\\res\\layout\\fragment_merchandise.xml"
+    },
+    {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
@@ -172,8 +184,20 @@
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_webview.xml",
+        "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\src\\main\\res\\layout\\home_webview.xml"
+    },
+    {
+        "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_srm_news.xml",
+        "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\src\\main\\res\\layout\\fragment_srm_news.xml"
+    },
+    {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab_text.xml",
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_tab_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_booking.xml",
+        "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\src\\main\\res\\layout\\fragment_booking.xml"
     },
     {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_content.xml",
@@ -198,6 +222,10 @@
     {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_song.xml",
+        "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\src\\main\\res\\layout\\fragment_song.xml"
     },
     {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -242,6 +270,10 @@
     {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_event_schedule.xml",
+        "source": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\src\\main\\res\\layout\\fragment_event_schedule.xml"
     },
     {
         "merged": "C:\\Users\\ILM\\AndroidStudioProjects\\Reverb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
