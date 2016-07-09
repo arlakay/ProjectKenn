@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/primary">
+    android:layout_height="match_parent" >
 
     <ImageView
         android:id="@+id/artworkImageView"
@@ -20,7 +19,6 @@
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/textbluewhite"
         android:maxLines="1"
         android:ellipsize="end"
         android:paddingTop="6dp"
@@ -34,7 +32,6 @@
         android:text="Artist Name"
         android:layout_gravity="center_horizontal"
         android:textSize="14sp"
-        android:textColor="@color/textbluewhite"
         android:maxLines="1"
         android:ellipsize="end"
         android:paddingTop="6dp"
@@ -65,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:paddingRight="6dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_play_arrow_white_48dp" />
+                android:src="@drawable/ic_play_arrow_grey600_24dp" />
 
             <TextView
                 android:id="@+id/playCountTextView"
@@ -73,8 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="83,302"
-                android:textSize="10sp"
-                android:textColor="@color/textbluewhite"/>
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -91,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:paddingRight="6dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_favorite_white_24dp" />
+                android:src="@drawable/ic_favorite_grey600_24dp" />
 
             <TextView
                 android:id="@+id/favoriteCountTextView"
@@ -99,8 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="83,302"
-                android:textSize="10sp"
-                android:textColor="@color/textbluewhite"/>
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -117,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:paddingRight="6dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_thumb_up_white_24dp" />
+                android:src="@drawable/ic_thumb_up_grey600_24dp" />
 
             <TextView
                 android:id="@+id/likeCountTextView"
@@ -125,8 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="83,302"
-                android:textSize="10sp"
-                android:textColor="@color/textbluewhite"/>
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -143,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:paddingRight="6dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_comment_white_24dp" />
+                android:src="@drawable/ic_comment_grey600_24dp" />
 
             <TextView
                 android:id="@+id/commentCountTextView"
@@ -151,8 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="83,302"
-                android:textSize="10sp"
-                android:textColor="@color/textbluewhite"/>
+                android:textSize="10sp" />
 
         </LinearLayout>
 

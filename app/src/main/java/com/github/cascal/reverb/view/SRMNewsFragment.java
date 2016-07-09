@@ -1,6 +1,8 @@
 package com.github.cascal.reverb.view;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,10 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.github.cascal.reverb.OnFragmentInteractionListener;
 import com.github.cascal.reverb.R;
-import com.github.cascal.reverb.util.MyAppWebViewClient;
+import com.github.cascal.reverb.util.AVLoadingIndicatorDialog;
 
 
 public class SRMNewsFragment extends Fragment {
@@ -53,10 +56,45 @@ public class SRMNewsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_srm_news, container, false);
 
+        final AVLoadingIndicatorDialog dialog=new AVLoadingIndicatorDialog(getActivity());
+        dialog.setMessage("Loading");
+        dialog.show();
+
         mWebView = (WebView) rootView.findViewById(R.id.webview_srm_news);
 
         // Force links and redirects to open in the WebView instead of in a browser
-        mWebView.setWebViewClient(new MyAppWebViewClient());
+        mWebView.setWebViewClient(new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (Uri.parse(url).getHost().endsWith("srmbands.com")) {
+                    return false;
+                }
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                view.getContext().startActivity(intent);
+
+                dialog.show();
+
+                return super.shouldOverrideUrlLoading(view, url);
+            }
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                dialog.show();
+
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                view.loadUrl("javascript:if (typeof(document.getElementsByClassName('td-header-wrap')[0]) != 'undefined' && document.getElementsByClassName('td-header-wrap')[0] != null){document.getElementsByClassName('td-header-wrap')[0].style.display = 'none';} void 0");
+                view.loadUrl("javascript:if (typeof(document.getElementsByClassName('td-sub-footer-container')[0]) != 'undefined' && document.getElementsByClassName('td-sub-footer-container')[0] != null){document.getElementsByClassName('td-sub-footer-container')[0].style.display = 'none';} void 0");
+                view.loadUrl("javascript:if (typeof(document.getElementsByClassName('td-main-sidebar')[0]) != 'undefined' && document.getElementsByClassName('td-main-sidebar')[0] != null){document.getElementsByClassName('td-main-sidebar')[0].style.display = 'none';} void 0");
+
+                dialog.dismiss();
+            }
+        });
 
         // Enable Javascript
         WebSettings webSettings = mWebView.getSettings();

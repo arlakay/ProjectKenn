@@ -3,6 +3,7 @@ package com.github.cascal.reverb.view;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
@@ -11,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.github.cascal.reverb.OnFragmentInteractionListener;
 import com.github.cascal.reverb.R;
@@ -29,6 +31,7 @@ public class SearchActivity extends SingleFragmentActivity implements SearchFrag
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_fragment);
 
@@ -37,9 +40,12 @@ public class SearchActivity extends SingleFragmentActivity implements SearchFrag
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
 
+        FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.playFAB);
+        fab.setVisibility(View.GONE);
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.fragment_container, new SearchFragment())
+                    .replace(R.id.fragment_container, new SearchFragment())
                     .commit();
         }
 
@@ -52,76 +58,65 @@ public class SearchActivity extends SingleFragmentActivity implements SearchFrag
 
                 switch (menuItem.getItemId()) {
                     case R.id.navigation_item_playlist:
+                        mDrawerLayout.closeDrawers();
                         if (savedInstanceState == null) {
+                            SearchFragment searchFragment = new SearchFragment();
+                            Bundle arguments = new Bundle();
+                            searchFragment.setArguments(arguments);
                             getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment_container, new SearchFragment())
+                                    .setCustomAnimations(R.anim.activityslidein, R.anim.activityslideinout, R.anim.activityslideoutpop, R.anim.activityslideout)
+                                    .replace(R.id.fragment_container, searchFragment, "searchfragment")
+//                                    .addToBackStack("searchfragment")
                                     .commit();
                         }
-                        mDrawerLayout.closeDrawers();
                         mCurrentSelectedPosition = 0;
                         return true;
-                    case R.id.navigation_item_home:
+                    case R.id.navigation_item_our_artist:
+                        mDrawerLayout.closeDrawers();
                         if (savedInstanceState == null) {
+                            OurArtistFragment ourArtistFragment = new OurArtistFragment();
+                            Bundle arguments = new Bundle();
+                            ourArtistFragment.setArguments(arguments);
                             getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment_container, new HomeFragment())
+                                    .setCustomAnimations(R.anim.activityslidein, R.anim.activityslideinout, R.anim.activityslideoutpop, R.anim.activityslideout)
+                                    .replace(R.id.fragment_container, ourArtistFragment, "ourartistfragment")
+//                                    .addToBackStack("ourartistfragment")
                                     .commit();
                         }
-                        mDrawerLayout.closeDrawers();
                         mCurrentSelectedPosition = 1;
                         return true;
-                    case R.id.navigation_item_our_artist:
+                    case R.id.navigation_item_srm_news:
+                        mDrawerLayout.closeDrawers();
                         if (savedInstanceState == null) {
                             getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment_container, new OurArtistFragment())
+                                    .setCustomAnimations(R.anim.activityslidein, R.anim.activityslideinout, R.anim.activityslideoutpop, R.anim.activityslideout)
+                                    .replace(R.id.fragment_container, new SRMNewsFragment(), "srmnewsfragment")
+//                                    .addToBackStack("srmnewsfragment")
                                     .commit();
                         }
-                        mDrawerLayout.closeDrawers();
                         mCurrentSelectedPosition = 2;
                         return true;
-                    case R.id.navigation_item_srm_news:
+                    case R.id.navigation_item_event_schedule:
+                        mDrawerLayout.closeDrawers();
                         if (savedInstanceState == null) {
                             getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment_container, new SRMNewsFragment())
+                                    .setCustomAnimations(R.anim.activityslidein, R.anim.activityslideinout, R.anim.activityslideoutpop, R.anim.activityslideout)
+                                    .replace(R.id.fragment_container, new EventScheduleFragment(), "eventschedulefragment")
+//                                    .addToBackStack("eventschedulefragment")
                                     .commit();
                         }
-                        mDrawerLayout.closeDrawers();
                         mCurrentSelectedPosition = 3;
                         return true;
-                    case R.id.navigation_item_event_schedule:
-                        if (savedInstanceState == null) {
-                            getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment_container, new EventScheduleFragment())
-                                    .commit();
-                        }
-                        mDrawerLayout.closeDrawers();
-                        mCurrentSelectedPosition = 4;
-                        return true;
                     case R.id.navigation_item_bookings:
+                        mDrawerLayout.closeDrawers();
                         if (savedInstanceState == null) {
                             getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment_container, new BookingFragment())
+                                    .setCustomAnimations(R.anim.activityslidein, R.anim.activityslideinout, R.anim.activityslideoutpop, R.anim.activityslideout)
+                                    .replace(R.id.fragment_container, new BookingFragment(), "bookingfragment")
+//                                    .addToBackStack("bookingfragment")
                                     .commit();
                         }
-                        mDrawerLayout.closeDrawers();
-                        mCurrentSelectedPosition = 5;
-                        return true;
-                    case R.id.navigation_item_songs:
-                        if (savedInstanceState == null) {
-                            getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment_container, new SongFragment())
-                                    .commit();
-                        }
-                        mDrawerLayout.closeDrawers();
-                        mCurrentSelectedPosition = 6;
-                        return true;
-                    case R.id.navigation_item_merchandise:
-                        if (savedInstanceState == null) {
-                            getSupportFragmentManager().beginTransaction()
-                                    .add(R.id.fragment_container, new MerchandiseFragment())
-                                    .commit();
-                        }
-                        mDrawerLayout.closeDrawers();
-                        mCurrentSelectedPosition = 7;
+                        mCurrentSelectedPosition = 4;
                         return true;
                     default:
                         return true;
@@ -161,7 +156,6 @@ public class SearchActivity extends SingleFragmentActivity implements SearchFrag
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
         switch (item.getItemId()) {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
@@ -174,4 +168,5 @@ public class SearchActivity extends SingleFragmentActivity implements SearchFrag
     public void onFragmentInteraction(Uri uri) {
 
     }
+
 }

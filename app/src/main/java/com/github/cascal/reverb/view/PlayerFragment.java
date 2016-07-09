@@ -216,7 +216,7 @@ public class PlayerFragment extends Fragment implements SeekBar.OnSeekBarChangeL
 
     private void togglePlayPauseButton() {
         boolean isPlay = (Boolean)playPauseButton.getTag();
-        playPauseButton.setImageResource(isPlay ? R.drawable.ic_pause_white_24dp : R.drawable.ic_play_arrow_white_24dp);
+        playPauseButton.setImageResource(isPlay ? R.drawable.ic_pause_grey600_24dp : R.drawable.ic_play_arrow_grey600_24dp);
         playPauseButton.setTag(!isPlay);
     }
 

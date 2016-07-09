@@ -10,4 +10,9 @@
         <item name="colorAccent">@color/accent</item>
     </style>
 
+    <style name="AppTheme.BrandedLaunch" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+
 </resources>

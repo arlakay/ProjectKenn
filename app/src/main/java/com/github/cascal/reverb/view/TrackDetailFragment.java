@@ -2,8 +2,8 @@ package com.github.cascal.reverb.view;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -99,14 +99,16 @@ public class TrackDetailFragment extends Fragment {
         artistNameTextView.setText(trackData.getArtistName());
         trackNameTextView.setText(trackData.getTitle());
 
-        FloatingActionButton playButton = (FloatingActionButton) view.findViewById(R.id.playFAB);
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (callback != null)
-                    callback.onPlayTrack(trackData);
-            }
-        });
+//        FloatingActionButton playButton = (FloatingActionButton) view.findViewById(R.id.playFAB);
+//        playButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (callback != null)
+//                    callback.onPlayTrack(trackData);
+//            }
+//        });
+
+        Log.d("fragmentdata", String.valueOf(trackData));
 
         return view;
     }

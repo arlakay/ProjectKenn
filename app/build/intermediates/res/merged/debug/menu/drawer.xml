@@ -12,12 +12,6 @@
             android:title="Playlist" />
 
         <item
-            android:id="@+id/navigation_item_home"
-            android:checked="true"
-            android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Home" />
-
-        <item
             android:id="@+id/navigation_item_our_artist"
             android:icon="@drawable/ic_cached_black_18dp"
             android:title="Our Artist" />
@@ -36,16 +30,6 @@
             android:id="@+id/navigation_item_bookings"
             android:icon="@drawable/ic_cached_black_18dp"
             android:title="Bookings" />
-
-        <item
-            android:id="@+id/navigation_item_songs"
-            android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Songs" />
-
-        <item
-            android:id="@+id/navigation_item_merchandise"
-            android:icon="@drawable/ic_cached_black_18dp"
-            android:title="Merchandise" />
 
     </group>
 

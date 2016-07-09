@@ -9,4 +9,5 @@
         android:textSize="14sp"
         android:layout_centerInParent="true"
         android:text="Nobody has commented yet" />
+
 </RelativeLayout>

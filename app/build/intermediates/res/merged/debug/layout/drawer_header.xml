@@ -31,7 +31,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginBottom="10dp"
                 android:textColor="#ECEFF1"
-                android:text="Koala Kumal"
+                android:text=""
                 android:textSize="14sp"
                 android:textStyle="bold" />
 

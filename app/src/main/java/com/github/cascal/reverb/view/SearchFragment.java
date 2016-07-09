@@ -117,6 +117,7 @@ public class SearchFragment extends Fragment {
                     shouldShowEmpty = true;
                     showEmpty();
                 } else {
+                    trackAdapter.notifyDataSetChanged();
                     showContent();
                 }
             }
