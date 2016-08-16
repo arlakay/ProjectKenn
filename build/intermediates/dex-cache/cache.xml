@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3ceaa0ad4aecc45bc91ad190dcff1103587cd8b0">
+        <dex dex="C:\Users\ILM\AndroidStudioProjects\Reverb-master\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_bc453af8aa0d9e2694fe3855602af01f97df8014.jar" />
+    </item>
+
+</items>

@@ -1,6 +1,8 @@
 package com.github.cascal.reverb.view;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -18,6 +20,7 @@ import com.github.cascal.reverb.data.TrackData;
 import com.github.cascal.reverb.soundcloud.SoundCloudApi;
 import com.github.cascal.reverb.soundcloud.SoundCloudService;
 import com.github.cascal.reverb.soundcloud.model.Track;
+import com.github.cascal.reverb.util.CheckNetwork;
 
 import java.util.List;
 
@@ -37,6 +40,8 @@ public class SearchFragment extends Fragment {
     private TrackAdapter trackAdapter;
     private Callbacks callback;
     private boolean shouldShowEmpty, isLoading;
+    private CheckNetwork cd;
+    private Boolean isInternetPresent = false;
 
     public interface Callbacks {
         void onTrackSelected(TrackData trackData);
@@ -57,6 +62,7 @@ public class SearchFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
+
         soundCloud = new SoundCloudApi(Config.CLIENT_ID).getService();
         trackAdapter = new TrackAdapter(getActivity());
 
@@ -70,6 +76,8 @@ public class SearchFragment extends Fragment {
         emptyView = view.findViewById(R.id.emptyView);
         listView.setEmptyView(emptyView);
         progressBar = view.findViewById(R.id.progressBar);
+
+        cd = new CheckNetwork(getActivity().getApplicationContext());
 
         listView.setAdapter(trackAdapter);
 
@@ -86,7 +94,21 @@ public class SearchFragment extends Fragment {
             showContent();
         }
 
-        methodGabutErsa();
+
+        isInternetPresent = cd.isConnectingToInternet();
+
+        if (isInternetPresent) {
+            methodGabutErsa();
+        } else {
+            AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
+            alertDialog.setTitle("No Internet Connection");
+            alertDialog.setMessage("You don't have internet connection.");
+            alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                }
+            });
+            alertDialog.show();
+        }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
